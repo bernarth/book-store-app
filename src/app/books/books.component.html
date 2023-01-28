@@ -1,5 +1,8 @@
 <p>Programming Books List!</p>
-<button (click)="toggleBooks()">Toggle Books</button>
+<button (click)="toggleBooks()">
+    <ng-container *ngIf="!isShowing">Show Books</ng-container>
+    <ng-container *ngIf="isShowing">Hide Books</ng-container>
+</button>
 
 <ul *ngIf="isShowing">
     <li>
