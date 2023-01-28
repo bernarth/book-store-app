@@ -14,11 +14,11 @@ export class BooksComponent {
   author2: string = 'David Thomas';
   src2: string = 'https://m.media-amazon.com/images/I/51IA4hT6jrL._SX380_BO1,204,203,200_.jpg';
 
-  isDisabled: boolean = false;
+  isShowing: boolean = true;
 
-  myName: string = '';
+  constructor() {}
 
-  handleClick(): void {
-    this.isDisabled = true;
+  toggleBooks(): void {
+    this.isShowing = !this.isShowing;
   }
 }
