@@ -40,12 +40,6 @@ export class BooksComponent {
       amount: 800
     }
   ];
-  
-  isShowing: boolean = true;
 
   constructor() {}
-
-  toggleBooks(): void {
-    this.isShowing = !this.isShowing;
-  }
 }
