@@ -1,0 +1,6 @@
+.book {
+    list-style: none;
+    text-overflow: ellipsis;
+    text-align: center;
+    cursor: pointer;
+}

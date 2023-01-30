@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-
-// It's good to define the type so interfaces helps with that.
-interface Book {
-  name: string;
-  author: string;
-  image: string;
-  amount: number;
-}
+import { Book } from '../interfaces/Book';
 
 @Component({
   selector: 'app-books',
