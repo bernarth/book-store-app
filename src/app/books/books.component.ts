@@ -26,6 +26,18 @@ export class BooksComponent {
       author: 'david thomas',
       image: 'https://m.media-amazon.com/images/I/51IA4hT6jrL._SX380_BO1,204,203,200_.jpg',
       amount: 800
+    },
+    {
+      name: 'art of computer programming',
+      author: 'donald knuth',
+      image: 'https://m.media-amazon.com/images/I/41YakMLJktL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg',
+      amount: 18300
+    },
+    {
+      name: 'introduction to algorithms',
+      author: 'thomas cormen',
+      image: 'https://m.media-amazon.com/images/I/41SNoh5ZhOL._SX440_BO1,204,203,200_.jpg',
+      amount: 800
     }
   ];
   
