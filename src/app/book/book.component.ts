@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Book } from '../interfaces/Book';
 
 @Component({
@@ -8,5 +8,10 @@ import { Book } from '../interfaces/Book';
 })
 export class BookComponent {
   @Input() book: Book = {} as Book;
+  @Output() emitBook = new EventEmitter<Book>();
 
+
+  addToCart(): void {
+    this.emitBook.emit(this.book);
+  }
 }

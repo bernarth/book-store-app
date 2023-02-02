@@ -34,5 +34,7 @@ export class BooksComponent {
     }
   ];
 
+  card: Book[] = [];
+
   constructor() {}
 }
