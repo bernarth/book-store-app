@@ -37,4 +37,8 @@ export class BooksComponent {
   card: Book[] = [];
 
   constructor() {}
+
+  addToCart(event: Book): void {
+    console.log(event);
+  }
 }

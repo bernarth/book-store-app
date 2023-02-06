@@ -8,10 +8,10 @@ import { Book } from '../interfaces/Book';
 })
 export class BookComponent {
   @Input() book: Book = {} as Book;
-  @Output() emitBook = new EventEmitter<Book>();
+  @Output() bookEmitter = new EventEmitter<Book>();
 
 
   addToCart(): void {
-    this.emitBook.emit(this.book);
+    this.bookEmitter.emit(this.book);
   }
 }
